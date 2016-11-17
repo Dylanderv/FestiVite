@@ -1,6 +1,12 @@
 .form-control{
   border-radius: 0px;
 }
+.navbar{
+  background-color: #6BB9F0;
+}
+.btn-success{
+  border-radius: 0;
+}
 
 #topnavbar {
     margin: 0;
@@ -9,4 +15,13 @@
     position: fixed;
     top: 0;
     width: 100%;
+}
+
+#banner{
+  background-color: #051C2C;
+  height: 150px;
+}
+
+#banner a{
+  padding: 0px;
 }
