@@ -1,3 +1,12 @@
 .form-control{
   border-radius: 0px;
 }
+
+#topnavbar {
+    margin: 0;
+}
+#topnavbar.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
