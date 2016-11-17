@@ -25,3 +25,18 @@
 #banner a{
   padding: 0px;
 }
+#footer{
+  color: white;
+  background-color: #051C2C;
+  padding-top: 20px;
+  height: 200px;
+  text-align: center;
+}
+
+#footer > div > img{
+  height: 100px;
+}
+
+#footer a{
+  padding: 0px;
+}
