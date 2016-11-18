@@ -21,6 +21,7 @@
 #banner{
   background-color: #051C2C;
   height: 150px;
+  width: 100%;
 }
 #banner a{
   padding: 0px;
@@ -52,6 +53,9 @@ section{
   color: white;
   background-color: #051C2C;
   text-align: center;
+}
+#footer > div {
+  margin: 0px;
 }
 #footer > div > img{
   height: 100px;
