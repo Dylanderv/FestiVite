@@ -28,6 +28,7 @@ html,
 body {
   height: 100%;
   font-family: "Sertig", sans-serif;;src: url("font/Sertig.otf");
+  font-weight: bold;
 }
 section{
   margin-top: 20px;
@@ -76,9 +77,6 @@ section{
 /*Fin de label Co/Ins*/
 
 /*Nav style*/
-.navbar-default .navbar-nav > li > a {
-  color: white;
-}
 .navbar{
   background-color: #6BB9F0;
 }
@@ -94,4 +92,56 @@ section{
 .navbar > .container{
   width: 100%;
   padding-left: 40px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white;
+}
+.navbar-default .navbar-nav > li > a:focus {
+  color: white;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  background-color: #051C2C;
+  color: white;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+  background-color: #051C2C;
+  color: white;
+}
+
+.navbar-nav > li > .dropdown-menu{
+  border-radius: 0px;
+  background-color: #051C2C;
+}
+.navbar-nav > li > .dropdown-menu > li > a{
+  color: white;
+}
+.navbar-nav > li > .dropdown-menu > li > a:hover{
+  background-color: #6BB9F0;
+}
+
+.vertaligicon{
+  margin-top: -18px;
+}
+
+  /**Spécifique au @media xs**/
+.navbar-default .navbar-toggle{
+  border: 0px;
+    background-color: #1E8BC3;
+}
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover{
+  background-color: #051C2C;;
+}
+.navbar-default .navbar-toggle .icon-bar{
+  background-color: white;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a{
+    color: white;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover{
+  color: #051C2C;
 }
