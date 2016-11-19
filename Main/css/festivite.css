@@ -2,9 +2,6 @@
 .form-control{
   border-radius: 0px;
 }
-.navbar{
-  background-color: #6BB9F0;
-}
 .btn-success{
   border-radius: 0;
 }
@@ -30,6 +27,7 @@
 html,
 body {
   height: 100%;
+  font-family: "Sertig", sans-serif;;src: url("font/Sertig.otf");
 }
 section{
   margin-top: 20px;
@@ -55,7 +53,7 @@ section{
   text-align: center;
 }
 #footer > div {
-  margin: 0px;
+  margin: 0
 }
 #footer > div > img{
   height: 100px;
@@ -64,7 +62,7 @@ section{
   padding: 0px;
 }
 
-
+/*Label pour page de Co/Ins*/
 #visitdemand{
   text-align: center;
 }
@@ -74,4 +72,26 @@ section{
 }
 #inscription{
   border-radius: 0px;
+}
+/*Fin de label Co/Ins*/
+
+/*Nav style*/
+.navbar-default .navbar-nav > li > a {
+  color: white;
+}
+.navbar{
+  background-color: #6BB9F0;
+}
+.navbar a{
+  height: inherit;
+}
+.navbar img{
+  max-height: 42px;
+}
+.navbar-brand{
+  padding: 5px 5px;
+}
+.navbar > .container{
+  width: 100%;
+  padding-left: 40px;
 }
