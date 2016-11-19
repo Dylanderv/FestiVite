@@ -115,15 +115,14 @@ section{
   border-radius: 0px;
   background-color: #051C2C;
 }
+.navbar-nav > li > .dropdown-menu > li{
+  white-space: inherit !important;
+}
 .navbar-nav > li > .dropdown-menu > li > a{
   color: white;
 }
 .navbar-nav > li > .dropdown-menu > li > a:hover{
   background-color: #6BB9F0;
-}
-
-.vertaligicon{
-  margin-top: -18px;
 }
 
   /**Spécifique au @media xs**/
