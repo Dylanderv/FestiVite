@@ -44,6 +44,7 @@ section{
 }
 #main{
   /*padding-top: 20px;*/
+  text-align: center;
 }
 #push,
 #footer {
@@ -75,12 +76,18 @@ section{
 #inscription{
   border-radius: 0px;
 }
+
+/*Titres main*/
+#alaventure{
+  background-color: #051C2C;
+  padding: 5px;
+  color: white;
+  font-weight: lighter;
+  letter-spacing: 0.3em;
+}
 /*Fin de label Co/Ins*/
 
 /*Nav style*/
-#fdp{
-  height: inherit;
-}
 .navbar{
   background-color: #6BB9F0;
 }
@@ -119,11 +126,11 @@ section{
   border-radius: 0px;
   background-color: #051C2C;
 }
-
 .navbar-nav > li > .dropdown-menu > li > a{
   color: white;
   white-space: inherit !important;
 }
+
 .navbar-nav > li > .dropdown-menu > li > a:hover{
   background-color: #6BB9F0;
 }
