@@ -161,50 +161,107 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
-<<<<<<< HEAD
-
-        <hr class="divider">
-        <div class="row container">
-          <h1 id="alaventure">A L'AVENTURE</h1>
-          <section class="row container">
-            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12 row">
-              <img src="css/image/iconrecherche.png" alt="recherche"/>
-              <span class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Deroule</span>
-              </a>
-              <ul class="dropdown-menu pull-right">
-                <li><a href="#">Mes Infos</a></li>
-                <li><a href="#">Mon historique</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Contact</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Deconnexion<span class="glyphicon glyphicon-log-out pull-right"></span></a></li>
-              </ul>
+        <!--Creer soiree-->
+        <div class="container row">
+          <div class = "row">
+            <h1 id="creezvossoirees">Créez vos soirées</h1>
+          </div>
+          <div class = "row" style = "position: relative;">
+            <div class = "" id = "creerSoiree" >
+              <div><img src="css/image/logo/logofinal.png" alt ="création de soirée"/></div>
+              <h3 class=""><a href="#">Allons-y !</a></h3>
             </div>
-            </div>
-            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
-
-            </div>
-          </section>
-        </div>
-
-=======
-        <div class = "row">
-            <div class = "col-lg-5 col-md-5 col-sm-6 col-xs-12"><h5>Créez vos soirées</h5></div>
-        </div>
-        <div class = "row" style = "position: relative;">
-          <div class = "col-lg-5 col-md-5 col-sm-6 col-xs-12" id = "creerSoiree" >
-            <img src="" alt ="création de soirée">
-            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12" id = "lienCreerSoiree">TITRELIEN</div>
           </div>
         </div>
+        <!--/Creer soiree-->
 
-        </div>
->>>>>>> 8361444ba4f6c279df411ad920ccf32125fdeaa0
-        <div id="push"></div>
-      </div>
+
+        <hr class="divider">
+        <!--Aventure-->
+        <div id="aventure" class="row container">
+          <h1 id="alaventure">A L'AVENTURE</h1>
+          <section class="row container">
+            <!--Recherche-->
+            <div class=" col-sm-6 col-xs-12 row" id="research">
+              <div class="col-xs-6">
+                <img src="css/image/iconrecherche.png" alt="recherche"/>
+              </div>
+              <div class="col-xs-6">
+                <form class="form-horizontal col-xs-12">
+
+                  <div class="row">
+                    <div class="form-group">
+                      <div class="col-xs-12">
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <select name="date" class="form-control">
+                              <option value="" disabled selected="">Date</option>
+                              <!--...-->
+                              <option value=""></option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="form-group">
+                      <div class="col-xs-12">
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <select name="lieu" class="form-control">
+                              <option value="" disabled selected="">Lieu</option>
+                              <!--...-->
+                              <option value=""></option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="form-group">
+                      <div class="col-xs-12">
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <select name="theme" class="form-control">
+                              <option value="" disabled selected="">Thème</option>
+                              <!--...-->
+                              <option value=""></option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <button class="pull-left btn btn-primary" id="inscription">Rechercher</button>
+                  </div>
+                </form>
+
+              </div>
+            </div>
+            <!--Separator-->
+            <div class="divider-vertical col-sm-1 hidden-xs"></div>
+
+            <!--Suggestion-->
+            <div class="col-sm-offset-1 col-sm-5 col-xs-12 container">
+              <div class="row">
+                <h4>Suggestions de soirées</h4>
+              </div>
+              <div class="row">
+
+              </div>
+              <div class="row">
+                <a href="#"><span class="label label-primary col-xs-offset-9 col-xs-3" id="labelacces">Voir plus</span></a>
+              </div>
+            </div>
+          </section>
+        </div><!--Aventure-->
+      </div><!--Corps-->
+      <div id="push"></div>
+    </div>
 
 
       <footer id="footer">
