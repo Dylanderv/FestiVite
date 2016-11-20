@@ -101,7 +101,7 @@
             <button type="submit" class="btn btn-primary col-xs-3">Rechercher<span class="glyphicon glyphicon-search pull-right"></button>
           </form>
           <div id="rechercheavance" class="dropdown pull-right col-xs-4">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Recherche avancée <span class="glyphicon glyphicon-plus"></span></a>
+            <a id="showrechavan" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Recherche avancée <span class="glyphicon glyphicon-plus"></span></a>
           </div>
           <div class="row starthidden container">
             <form class="form-horizontal col-xs-12 container">
@@ -159,7 +159,7 @@
             $( "div:visible" ).click(function() {
               $( this ).css();
             });
-            $( "a" ).click(function() {
+            $( "#showrechavan" ).click(function() {
               $( "div:hidden" ).show( "fast" );
             });
           </script>
