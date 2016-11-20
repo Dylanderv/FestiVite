@@ -2,7 +2,7 @@
 .form-control{
   border-radius: 0px;
 }
-.button{
+.btn{
   border-radius: 0;
 }
 .btn-success{
@@ -88,7 +88,7 @@ section{
   font-weight: lighter;
   letter-spacing: 0.3em;
 }
-#creezvossoirees{
+.titre1{
   padding-top: 5px;
   color: #051C2C;
   text-decoration: underline;
@@ -204,7 +204,6 @@ section{
   color: white;
   white-space: inherit !important;
 }
-
 .navbar-nav > li > .dropdown-menu > li > a:hover{
   background-color: #6BB9F0;
 }
@@ -212,7 +211,7 @@ section{
   /**Spécifique au @media xs**/
 .navbar-default .navbar-toggle{
   border: 0px;
-    background-color: #1E8BC3;
+  background-color: #1E8BC3;
 }
 .navbar-default .navbar-toggle:focus,
 .navbar-default .navbar-toggle:hover{
@@ -229,6 +228,35 @@ section{
   color: #051C2C;
 }
 /*Fin nav*/
+/*Pour la recherche prestataire*/
+#rechercheprestataire{
+  border-radius: 0px;
+  background-color: #6BB9F0;
+}
+#rechercheprestataire .form-group{
+  margin: 0px;
+  padding: 5px;
+}
+#rechercheprestataire .btn{
+  margin: 5px;
+  min-width:50px;
+  padding: 5px;
+  white-space: inherit !important;
+}
+#rechercheavance{
+  margin-top:5px;
+  padding: 5px;
+}
+#rechercheavance > a{
+  color:white;
+}
+#rechercheavance > a:hover{
+  text-decoration: none;
+}
+.starthidden{
+  display: none;
+}
+/*Fin recherche prestataire*/
 /*Carousel (le truc cool)*/
 .carousel {
   height: 300px;
@@ -272,7 +300,6 @@ section{
   #creerSoiree > div{
     height: 100px;
   }
-
   #creerSoiree img{
     height: 100px;
     max-width: 80%;

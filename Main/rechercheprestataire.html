@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>FestiVite</title>
+
+    <link href="css/bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/bootstrap-3.3.7/docs/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <script src="css/bootstrap-3.3.7/docs/assets/js/ie-emulation-modes-warning.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link href="css/festivite.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="wrap">
+    <!-- Banniere -->
+      <div id="banner">
+          <a class="navbar-brand" href="#"><img src="css/image/logo/logo150.png" alt="FestiVite" /></a>
+      </div>
+
+    <!-- Menu de navigation  -->
+      <nav class="navbar navbar-default navbar-static-top" role="navigation" id="topnavbar">
+        <div class="container">
+
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="css/image/btnhome.png" alt="Home" /></a>
+          </div>
+
+          <div class="navbar-collapse collapse" id="navbar" >
+            <ul class="nav navbar-nav">
+              <!--Mon compte-->
+              <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Mon compte <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Mes Infos</a></li>
+                <li><a href="#">Mon historique</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Contact</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Deconnexion<span class="glyphicon glyphicon-log-out pull-right"></span></a></li>
+              </ul>
+              <!--/Mon compte-->
+
+              <!--Mes amis-->
+              <li><a href="#">Mes Amis</a></li>
+              <!--/Mes amis-->
+
+              <!--Mes soirées-->
+              <li><a href="#">Mes Soirées</a></li>
+              <!--/Mes soirées-->
+
+              <!--Partenaire-->
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Partenaire<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="main.html">Rechercher<span class="glyphicon glyphicon-search pull-right"></a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Favoris<span class="glyphicon glyphicon-star pull-right"></a></li>
+                </ul>
+              </li>
+              <!--/Partenaire-->
+            </ul>
+            <!--/fin des items de la navbar-->
+          </div><!--/.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    <!-- script utile ? -->
+      <script type="text/javascript">
+        $('#topnavbar').affix({
+          offset: {
+            top: $('#banner').height()
+          }
+        });
+      </script>
+
+      <!-- Debut du corps -->
+      <div class="container" id="main">
+        <!--Barre de recherche-->
+        <div class="row">
+          <h1 class="titre1">Rechercher des Prestataires</h1>
+        </div>
+        <div id="rechercheprestataire" class="row container">
+          <form class="row col-xs-8">
+            <div class="form-group col-xs-8">
+              <input type="text" placeholder="Mot-Clés" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary col-xs-3">Rechercher<span class="glyphicon glyphicon-search pull-right"></button>
+          </form>
+          <div id="rechercheavance" class="dropdown pull-right col-xs-4">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Recherche avancée <span class="glyphicon glyphicon-plus"></span></a>
+          </div>
+          <div class="row starthidden container">
+            <form class="form-horizontal col-xs-12 container">
+
+              <div class="row container">
+                <div class="form-group">
+                  <div class="col-xs-6 row container">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <label for="">Trier par</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row container">
+                <div class="form-group">
+                  <div class="col-xs-6">
+                    <div class="row container">
+                      <div class="col-xs-6 row">
+                        <label for="" class="col-xs-3">Disponibilité:</label>
+                        <select name="lieu" class="form-control col-xs-7">
+                          <option value="" disabled selected="">Disponibilité</option>
+                          <!--...-->
+                          <option value=""></option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row container">
+                <div class="form-group">
+                  <div class="col-xs-6">
+                    <div class="row container">
+                      <div class="col-xs-6 row">
+                        <label for="" class="col-xs-4">Type:</label>
+                        <select name="type" class="form-control col-xs-7">
+                          <option value="" disabled selected="">Type</option>
+                          <!--...-->
+                          <option value=""></option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <button class="pull-left btn btn-primary" id="inscription">Rechercher</button>
+              </div>
+            </form>
+          </div>
+          <script>
+            $( "div:visible" ).click(function() {
+              $( this ).css();
+            });
+            $( "a" ).click(function() {
+              $( "div:hidden" ).show( "fast" );
+            });
+          </script>
+        </div>
+      </div><!--Corps-->
+      <div id="push"></div>
+    </div>
+    <!--un commentaire-->
+
+      <footer id="footer">
+        <div class="row">
+          <img src="css/image/logo/logo150.png" alt="FestiVite" />
+        </div>
+        <div class="row">
+          <h5>
+            <p>&copy; 2016 Festivite, Inc.</p>
+          </h5>
+        </div>
+      </footer>
+    </div>
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="css/bootstrap-3.3.7/docs/assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="css/bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="css/bootstrap-3.3.7/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
