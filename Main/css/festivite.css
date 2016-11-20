@@ -2,6 +2,9 @@
 .form-control{
   border-radius: 0px;
 }
+.button{
+  border-radius: 0;
+}
 .btn-success{
   border-radius: 0;
 }
@@ -86,6 +89,20 @@ section{
   letter-spacing: 0.3em;
 }
 /*Fin de label Co/Ins*/
+
+/*Mise en page création soirée lie+image*/
+#creerSoiree{
+  position: absolute;
+  top:0px;
+  left: 0px;
+  z-index -1;
+}
+#lienCreerSoiree{
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+/* Fin*/
 
 /*Nav style*/
 .navbar{
