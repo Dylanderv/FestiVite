@@ -262,7 +262,19 @@ section{
     height: 100px;
     max-width: 100%;
   }
-  body{
-    font-size: 0.8em!important;
+  h1{
+    font-size: 1.5em!important;
+  }
+  h3{
+    font-weight: bold;
+    font-size: 0.8em;
+  }
+  #creerSoiree > div{
+    height: 100px;
+  }
+
+  #creerSoiree img{
+    height: 100px;
+    max-width: 80%;
   }
 }
