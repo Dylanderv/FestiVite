@@ -302,6 +302,7 @@ section{
 #etape1>div{
   margin: 10px 0px;
 }
+
 #etape1 > div > a > div{
   position: relative;
   padding: 0px;
@@ -311,6 +312,7 @@ section{
   border: 10px solid #051C2C;
 
 }
+
 #etape1>div>a>div>div{
   height: 180px;
   opacity: 0.6;
@@ -325,6 +327,25 @@ section{
   left:0;
   right: 0;
   transform: translateY(130%);
+}
+
+.theme{
+  position: relative;
+  height: 150px;
+  border: 10px solid #051C2C;
+  margin-bottom: 10px;
+}
+.theme>label{
+  position: absolute;
+  background-color: #051C2C;
+  bottom: 0;
+  left: 0;
+  right: 0;
+    margin: -5px;
+}
+.theme>label>h5{
+  letter-spacing: 0.2em;
+  color: white;
 }
 .formbtn{
   color: white;
