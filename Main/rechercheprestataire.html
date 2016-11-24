@@ -37,7 +37,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><img src="css/image/btnhome.png" alt="Home" /></a>
+            <a class="navbar-brand" href="main.html"><img src="css/image/btnhome.png" alt="Home" /></a>
           </div>
 
           <div class="navbar-collapse collapse" id="navbar" >
@@ -94,64 +94,48 @@
           <h1 class="titre1">Rechercher des Prestataires</h1>
         </div>
         <div id="rechercheprestataire" class="row container">
-          <form class="row col-xs-8">
-            <div class="form-group col-xs-8">
+          <form class="row col-sm-8 col-xs-12">
+            <div class="form-group col-sm-7 col-xs-12">
               <input type="text" placeholder="Mot-Clés" class="form-control">
             </div>
-            <button type="submit" class="btn btn-primary col-xs-3">Rechercher<span class="glyphicon glyphicon-search pull-right"></button>
+            <button type="submit" class="btn btn-primary col-sm-4 col-xs-6">Rechercher<span class="glyphicon glyphicon-search pull-right"></button>
           </form>
-          <div id="rechercheavance" class="dropdown pull-right col-xs-4">
+          <div id="rechercheavance" class="dropdown pull-right col-sm-4 col-xs-12">
             <a id="showrechavan" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Recherche avancée <span class="glyphicon glyphicon-plus"></span></a>
           </div>
           <div class="row starthidden container">
             <form class="form-horizontal col-xs-12 container">
-
-              <div class="row container">
-                <div class="form-group">
-                  <div class="col-xs-6 row container">
-                    <div class="row">
-                      <div class="col-xs-12">
-                        <label for="">Trier par</label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row container">
-                <div class="form-group">
-                  <div class="col-xs-6">
-                    <div class="row container">
-                      <div class="col-xs-6 row">
-                        <label for="" class="col-xs-3">Disponibilité:</label>
-                        <select name="lieu" class="form-control col-xs-7">
-                          <option value="" disabled selected="">Disponibilité</option>
-                          <!--...-->
-                          <option value=""></option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row container">
-                <div class="form-group">
-                  <div class="col-xs-6">
-                    <div class="row container">
-                      <div class="col-xs-6 row">
-                        <label for="" class="col-xs-4">Type:</label>
-                        <select name="type" class="form-control col-xs-7">
-                          <option value="" disabled selected="">Type</option>
-                          <!--...-->
-                          <option value=""></option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
               <div class="form-group">
-                <button class="pull-left btn btn-primary" id="inscription">Rechercher</button>
+                <label for="textarea" class="col-sm-3 control-label">Trier par : </label>
+                <div class="col-sm-9 row">
+                  <span class="col-sm-offset-0 col-sm-4 col-xs-offset-1 col-xs-10"><input type="radio" name="pertinence" value=""> Pertinence</span>
+                  <span class="col-sm-offset-0 col-sm-4 col-xs-offset-1 col-xs-10"><input type="radio" name="nouveaute" value=""> Nouveauté</span>
+                  <span class="col-sm-offset-0 col-sm-4 col-xs-offset-1 col-xs-10"><input type="radio" name="prix" value=""> Prix</span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="textarea" class="col-sm-3 control-label">Disponibilité : </label>
+                <div class="col-sm-9">
+                  <div class="row">
+                    <select name="lieu" class="form-control col-sm-7">
+                      <option value="" disabled selected="">Disponibilité</option>
+                      <!--...-->
+                      <option value=""></option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="textarea" class="col-sm-3 control-label">Type : </label>
+                <div class="col-sm-9">
+                  <div class="row">
+                    <select name="lieu" class="form-control col-sm-7">
+                      <option value="" disabled selected="">Type</option>
+                      <!--...-->
+                      <option value=""></option>
+                    </select>
+                  </div>
+                </div>
               </div>
             </form>
           </div>
@@ -160,7 +144,11 @@
               $( this ).css();
             });
             $( "#showrechavan" ).click(function() {
-              $( "div:hidden" ).show( "fast" );
+              if ($( "div.starthidden" ).is(':visible')){
+                $( "div.starthidden" ).hide( "fast" );
+              } else {
+                $( "div.starthidden" ).show( "fast" );
+              }
             });
           </script>
         </div>

@@ -10,23 +10,7 @@
 }
 
 /**Style des pages*/
-#topnavbar {
-    margin: 0;
-    border: 0px;
-}
-#topnavbar.affix {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-#banner{
-  background-color: #051C2C;
-  height: 150px;
-  width: 100%;
-}
-#banner a{
-  padding: 0px;
-}
+
 
 html,
 body {
@@ -233,6 +217,7 @@ section{
 #rechercheprestataire{
   border-radius: 0px;
   background-color: #6BB9F0;
+  text-align: left;
 }
 #rechercheprestataire .form-group{
   margin: 0px;
@@ -253,6 +238,10 @@ section{
 }
 #rechercheavance > a:hover{
   text-decoration: none;
+}
+#showrechavan:hover,
+#showrechavan:visited{
+    text-decoration: none;
 }
 .starthidden{
   display: none;
@@ -281,7 +270,24 @@ section{
   width: 100%;
 }
 /*fin Carousel*/
-
+#topnavbar {
+    margin: 0;
+    border: 0px;
+}
+#topnavbar.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+#banner{
+  background-color: #051C2C;
+  height: 150px;
+  width: 100%;
+}
+#banner a{
+  padding: 0px;
+}
 /*Pour les smartphone*/
 @media screen and (max-width: 768px) {
   #banner{
