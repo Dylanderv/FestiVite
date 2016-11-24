@@ -347,9 +347,20 @@ section{
   letter-spacing: 0.2em;
   color: white;
 }
+.choixdefaut{
+  border: 5px solid #ED811F;
+  color: #ED811F;
+  letter-spacing: 0.2em;
+  padding: 10px 0px;
+}
+.choixdefaut:hover{
+  text-decoration: none;
+  color: #ED811F;
+}
 .formbtn{
   color: white;
   padding: 5px 0px;
+  margin-top: 20px;
   width: 150px;
   border-radius: 0;
   background-color: #6BB9F0;
