@@ -341,7 +341,7 @@ section{
   bottom: 0;
   left: 0;
   right: 0;
-    margin: -5px;
+  margin-bottom: -5px;
 }
 .theme>label>h5{
   letter-spacing: 0.2em;
