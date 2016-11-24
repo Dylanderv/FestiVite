@@ -201,7 +201,7 @@ section{
 }
 .navbar-default .navbar-toggle:focus,
 .navbar-default .navbar-toggle:hover{
-  background-color: #051C2C;;
+  background-color: #051C2C;
 }
 .navbar-default .navbar-toggle .icon-bar{
   background-color: white;
@@ -289,6 +289,49 @@ section{
   background-color: white;
 }
 
+#etape1{
+  margin: 20px 0px;
+}
+
+#etape1>div{
+  margin: 10px 0px;
+}
+#etape1 > div > a > div{
+  position: relative;
+  padding: 0px;
+  background-image: url(image/logo/logofinal.png);
+  background-size: cover;
+  height: 200px;
+  border: 10px solid #051C2C;
+
+}
+#etape1>div>a>div>div{
+  height: 180px;
+  opacity: 0.6;
+  background-color: white;
+  padding: 10px;
+}
+#etape1>div>a>div>h1{
+  position: absolute;
+  color: #051C2C;
+  letter-spacing: 0.8em;
+  top:0;
+  left:0;
+  right: 0;
+  transform: translateY(130%);
+}
+.formbtn{
+  color: white;
+  padding: 5px 0px;
+  width: 150px;
+  border-radius: 0;
+  background-color: #6BB9F0;
+  border: none;
+}
+#Finaliser{
+  background-color: #051C2C;
+}
+
 /*Fin page creersoiree*/
 #topnavbar {
     margin: 0;
@@ -332,4 +375,5 @@ section{
     height: 100px;
     max-width: 80%;
   }
+
 }
