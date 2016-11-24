@@ -15,9 +15,40 @@
     <link href="css/bootstrap-3.3.7/docs/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <script src="css/bootstrap-3.3.7/docs/assets/js/ie-emulation-modes-warning.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
     <link href="css/festivite.css" rel="stylesheet">
     <link href="css/festiviteform.css" rel="stylesheet">
+    <style rel="stylesheet" text="text/css">
+      .chevronCurrent::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 51%;
+        width: 100%;
+        background: #051C2C;
+        -webkit-transform: skew(36deg, 0deg);
+        -moz-transform: skew(36deg, 0deg);
+        -ms-transform: skew(36deg, 0deg);
+        -o-transform: skew(36deg, 0deg);
+        transform: skew(36deg, 0deg);
+      }
+      .chevronCurrent::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 50%;
+        width: 100%;
+        background: #051C2C;
+        -webkit-transform: skew(-36deg, 0deg);
+        -moz-transform: skew(-36deg, 0deg);
+        -ms-transform: skew(-36deg, 0deg);
+        -o-transform: skew(-36deg, 0deg);
+        transform: skew(-36deg, 0deg);
+      }​
+    </style>
   </head>
 
   <body>
@@ -87,19 +118,118 @@
     <!-- Debut du corps -->
       <div id="main">
         <div class="hidden-xs"id="imagecreersoiree"><div></div></div>
+        <div  id="#my Etape">
+          <nav class="navbar navbar-static-top" id="etapecreersoiree">
+            <ul class="nav navbar-nav">
+              <li><div id="chevron1" class="chevronCurrent" >
+                <p class="numetape">
+                  Etape 1
+                </p>
+              </div></li>
+              <li><div id="chevron2" class="chevron" >
+                <p class="numetape">
+                  Etape 2
+                </p>
+              </div></li>
+              <li><div id="chevron3" class="chevron" >
+                <p class="numetape">
+                  Etape 3
+                </p>
+              </div></li>
+              <li><div id="chevron4" class="chevron" >
+                <p class="numetape">
+                  Etape 4
+                </p>
+              </div></li>
+              <li><div id="chevron5" class="chevron" >
+                <p class="numetape">
+                  Etape 5
+                </p>
+              </div></li>
+            </ul>
+          </nav>
+          <div id="etape1">1</div>
+          <div id="etape2" class="starthidden">2
+          </div>
+          <div id="etape3" class="starthidden">3
+          </div>
+          <div id="etape4" class="starthidden">4
+          </div>
+          <div id="etape5" class="starthidden">5
+          </div>
 
-        <nav class="navbar navbar-static-top" id="etapecreersoiree">
-          <ul class="nav navbar-nav">
-            <li><div class="chevron" >
-              zoujrgoqzejrgbq
-            </div></li>
-            <li><div class="chevron" >
-              zoujrgoqzejrgbq
-            </div></li>
-          </ul>
+          <button id="etapePrecedente" type="button" class="starthidden">
+            Précédent
+          </button>
+          <button id="etapeSuivante" type="button">
+            Suivant
+          </button>
+          <button id="Finaliser" type="button" class="starthidden" name="Finaliser">
+            Finaliser
+          </button>
 
-        </nav>
+            <script text="text/javascript">
+            $( "#etapeSuivante" ).click(function() {
+                if ($("#etape1").is(':visible')) {
+                  $( "#etape1").hide('medium');
+                  $("#chevron1").removeClass("chevronCurrent").addClass("chevron");
+                  $( "#etape2").show('medium');
+                  $("#chevron2").removeClass("chevron").addClass("chevronCurrent");
+                  $( "#etapePrecedente").show('medium');
+                } else
+                if ($("#etape2").is(':visible')) {
+                  $( "#etape2").hide('medium');
+                  $("#chevron2").removeClass("chevronCurrent").addClass("chevron");
+                  $( "#etape3").show('medium');
+                  $("#chevron3").removeClass("chevron").addClass("chevronCurrent");
+                } else
+                if ($("#etape3").is(':visible')) {
+                  $( "#etape3").hide('medium');
+                  $("#chevron3").removeClass("chevronCurrent").addClass("chevron");
+                  $( "#etape4").show('medium');
+                  $("#chevron4").removeClass("chevron").addClass("chevronCurrent");
+                } else
+                if ($("#etape4").is(':visible')) {
+                  $( "#etape4").hide('medium');
+                  $("#chevron4").removeClass("chevronCurrent").addClass("chevron");
+                  $( "#etape5").show('medium');
+                  $("#chevron5").removeClass("chevron").addClass("chevronCurrent");
+                  $( "#etapeSuivante").hide('medium');
+                  $( "#Finaliser").show('medium');
+                }
+            });
+            $( "#etapePrecedente" ).click(function() {
+                if ($("#etape5").is(':visible')) {
+                  $( "#Finaliser").hide('medium');
+                  $( "#etape5").hide('medium');
+                  $("#chevron5").removeClass("chevronCurrent").addClass("chevron");
+                  $( "#etape4").show('medium');
+                  $("#chevron4").removeClass("chevron").addClass("chevronCurrent");
+                  $( "#etapeSuivante").show('medium');
+                } else
+                if ($("#etape4").is(':visible')) {
+                  $( "#etape4").hide('medium');
+                  $("#chevron4").removeClass("chevronCurrent").addClass("chevron");
+                  $( "#etape3").show('medium');
+                  $("#chevron3").removeClass("chevron").addClass("chevronCurrent");
+                } else
+                if ($("#etape3").is(':visible')) {
+                  $( "#etape3").hide('medium');
+                  $("#chevron3").removeClass("chevronCurrent").addClass("chevron");
+                  $( "#etape2").show('medium');
+                  $("#chevron2").removeClass("chevron").addClass("chevronCurrent");
+                } else
+                if ($("#etape2").is(':visible')) {
+                  $( "#etape2").hide('medium');
+                  $("#chevron2").removeClass("chevronCurrent").addClass("chevron");
+                  $( "#etape1").show('medium');
+                  $("#chevron1").removeClass("chevron").addClass("chevronCurrent");
+                  $( "#etapePrecedente").hide('medium');
+                }
+            });
+            </script>
 
+        </div>
         </div>
       </div>
 

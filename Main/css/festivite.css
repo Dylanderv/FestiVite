@@ -284,7 +284,8 @@ section{
   background-color: white;
   opacity: 0.6;
 }
-#etapecreersoiree  > ul >li{
+#etapecreersoiree{
+  margin: 0px 20px;
   background-color: white;
 }
 
