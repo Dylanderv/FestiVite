@@ -1,0 +1,37 @@
+/*Chevrons*/
+.chevron {
+  position: relative;
+  text-align: center;
+  margin-left: 5px;
+  padding: 12px;
+  height: 60px;
+  width: 200px;
+}
+.chevron:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 51%;
+  width: 100%;
+  background: red;
+  -webkit-transform: skew(36deg, 0deg);
+  -moz-transform: skew(36deg, 0deg);
+  -ms-transform: skew(36deg, 0deg);
+  -o-transform: skew(36deg, 0deg);
+  transform: skew(36deg, 0deg);
+}
+.chevron:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 50%;
+  width: 100%;
+  background: red;
+  -webkit-transform: skew(-36deg, 0deg);
+  -moz-transform: skew(-36deg, 0deg);
+  -ms-transform: skew(-36deg, 0deg);
+  -o-transform: skew(-36deg, 0deg);
+  transform: skew(-36deg, 0deg);
+}​
