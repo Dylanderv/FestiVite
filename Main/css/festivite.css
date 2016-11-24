@@ -288,7 +288,13 @@ section{
   margin: 0px 20px;
   background-color: white;
 }
-
+.titreEtape{
+  color:  #6BB9F0;
+  padding: 10px;
+  border: 5px solid  #6BB9F0;
+  letter-spacing: 0.8em;
+  margin-bottom: 10px;
+}
 #etape1{
   margin: 20px 0px;
 }
