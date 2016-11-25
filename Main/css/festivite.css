@@ -145,12 +145,27 @@ section{
   padding: 5px 0;
 }
 
-.suggsoiree img{
-  height: 100px;
-  width: 100px;
-}
 .suggsoiree {
+  background-image: url('image/logo/logofinal.png');
   font-size: 9px;
+  padding: 0;
+  position: relative;
+  height: 120px;
+}
+.suggsoiree>div:first-child{
+  height: inherit;
+  background-color: white;
+  opacity: 0.6;
+}
+.suggsoiree>div>h5{
+  font-weight: bold;
+}
+.suggsoiree>div:last-child{
+  position: absolute;
+  top: 0;
+  height: inherit;
+  letter-spacing: 0.1em;
+  color: #051C2C;
 }
 /* Fin création de soirée*/
 
@@ -330,7 +345,7 @@ section{
 #etape1>div>a>div>h1{
   position: absolute;
   color: #051C2C;
-  letter-spacing: 0.8em;
+  letter-spacing: 0.3em;
   top:0;
   left:0;
   right: 0;
