@@ -144,6 +144,14 @@ section{
 #aventure span{
   padding: 5px 0;
 }
+
+.suggsoiree img{
+  height: 100px;
+  width: 100px;
+}
+.suggsoiree {
+  font-size: 9px;
+}
 /* Fin création de soirée*/
 
 /*Nav style*/
