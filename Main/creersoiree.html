@@ -15,7 +15,8 @@
     <link href="css/bootstrap-3.3.7/docs/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <script src="css/bootstrap-3.3.7/docs/assets/js/ie-emulation-modes-warning.js"></script>
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
 
     <link href="css/festivite.css" rel="stylesheet">
     <link href="css/festiviteform.css" rel="stylesheet">
@@ -25,7 +26,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        height: 51%;
+        height: 50%;
         width: 100%;
         background: #051C2C;
         -webkit-transform: skew(36deg, 0deg);
@@ -49,6 +50,7 @@
         transform: skew(-36deg, 0deg);
       }​
     </style>
+
   </head>
 
   <body>
@@ -121,7 +123,7 @@
         <div  id="#myEtape" class="container">
           <nav class="navbar navbar-static-top" id="etapecreersoiree">
             <ul class="nav navbar-nav">
-              <li><div id="chevron1" class="chevronCurrent" >
+              <li><div id="chevron1" class="chevron chevronCurrent" >
                 <p class="numetape">
                   Etape 1
                 </p>
@@ -156,7 +158,10 @@
               <a href="#">
                 <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
                   <div></div>
-                  <h1 class="">CLASSIQUE</h1>
+                  <h1 class="centrerformulecontent">CLASSIQUE</h1>
+                  <p class='starthidden centrerformulecontent'>
+                    Lorem ipsum ouzehzohfz azoeiufoaieop aeiofaoefzeiçuoz o uhzoeh oeh o
+                  </p>
                 </div>
               </a>
             </div>
@@ -165,7 +170,10 @@
               <a href="#">
                 <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
                   <div></div>
-                  <h1 class="">A L'AVENTURE</h1>
+                  <h1 class="centrerformulecontent">A L'AVENTURE</h1>
+                  <p class='starthidden centrerformulecontent'>
+                    Lorem ipsum ouzehzohfz azoeiufoaieop aeiofaoefzeiçuoz o uhzoeh oeh o
+                  </p>
                 </div>
               </a>
             </div>
@@ -217,76 +225,7 @@
             Finaliser
             <span class="glyphicon glyphicon-chevron-right"></span>
           </button>
-
-            <script text="text/javascript">
-            $( "#etapeSuivante" ).click(function() {
-                if ($("#etape1").is(':visible')) {
-                  $( "#etape1").hide('medium');
-                  $("#chevron1").removeClass("chevronCurrent").addClass("chevron hidden-xs");
-                  $( "#etape2").show('medium');
-                  $("#chevron2").removeClass("chevron hidden-xs").addClass("chevronCurrent");
-                  $( "#etapePrecedente").show('medium');
-                } else
-                if ($("#etape2").is(':visible')) {
-                  $( "#etape2").hide('medium');
-                  $("#chevron2").removeClass("chevronCurrent").addClass("chevron hidden-xs");
-                  $( "#etape3").show('medium');
-                  $("#chevron3").removeClass("chevron hidden-xs").addClass("chevronCurrent");
-                } else
-                if ($("#etape3").is(':visible')) {
-                  $( "#etape3").hide('medium');
-                  $("#chevron3").removeClass("chevronCurrent").addClass("chevron hidden-xs");
-                  $( "#etape4").show('medium');
-                  $("#chevron4").removeClass("chevron hidden-xs").addClass("chevronCurrent");
-                } else
-                if ($("#etape4").is(':visible')) {
-                  $( "#etape4").hide('medium');
-                  $("#chevron4").removeClass("chevronCurrent").addClass("chevron hidden-xs");
-                  $( "#etape5").show('medium');
-                  $("#chevron5").removeClass("chevron hidden-xs").addClass("chevronCurrent");
-                  $( "#etapeSuivante").hide('medium');
-                  $( "#Finaliser").show('medium');
-                }
-            });
-            $( "#etapePrecedente" ).click(function() {
-                if ($("#etape5").is(':visible')) {
-                  $( "#Finaliser").hide('medium');
-                  $( "#etape5").hide('medium');
-                  $("#chevron5").removeClass("chevronCurrent").addClass("chevron hidden-xs");
-                  $( "#etape4").show('medium');
-                  $("#chevron4").removeClass("chevron hidden-xs").addClass("chevronCurrent");
-                  $( "#etapeSuivante").show('medium');
-                } else
-                if ($("#etape4").is(':visible')) {
-                  $( "#etape4").hide('medium');
-                  $("#chevron4").removeClass("chevronCurrent").addClass("chevron hidden-xs");
-                  $( "#etape3").show('medium');
-                  $("#chevron3").removeClass("chevron hidden-xs").addClass("chevronCurrent");
-                } else
-                if ($("#etape3").is(':visible')) {
-                  $( "#etape3").hide('medium');
-                  $("#chevron3").removeClass("chevronCurrent").addClass("chevron hidden-xs");
-                  $( "#etape2").show('medium');
-                  $("#chevron2").removeClass("chevron hidden-xs").addClass("chevronCurrent");
-                } else
-                if ($("#etape2").is(':visible')) {
-                  $( "#etape2").hide('medium');
-                  $("#chevron2").removeClass("chevronCurrent").addClass("chevron hidden-xs");
-                  $( "#etape1").show('medium');
-                  $("#chevron1").removeClass("chevron hidden-xs").addClass("chevronCurrent");
-                  $( "#etapePrecedente").hide('medium');
-                }
-            });
-            $("#formule1").hover(function(){
-              $("#formule1").css({'height' :'110%'})
-              $("#formule2").css({'height' :'90%'})
-            });
-            $("#formule2").hover(function(){
-              $("#formule2").css({'height' :'110%;'});
-              $("formule1").css({'height' :'90%;'});
-            });
-            </script>
-
+          <script src="css/js/formsoiree.js"></script>
         </div>
         </div>
         <div id="push">

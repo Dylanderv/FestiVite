@@ -342,7 +342,7 @@ section{
   background-color: white;
   padding: 10px;
 }
-#etape1>div>a>div>h1{
+.centrerformulecontent{
   position: absolute;
   color: #051C2C;
   letter-spacing: 0.3em;
